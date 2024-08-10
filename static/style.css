@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "DM Sans", sans-serif;
+	line-height: 1.5;
+	background-color: #4158D0;
+	background-image: linear-gradient(to bottom right, #00C0FF, #4218B8);
+	padding: 0 2rem;
+	margin: 0;
+	color: #333;
+}
+
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+input {
+	appearance: none;
+	border-radius: 0;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.card {
+	margin: 2rem auto;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 425px;
+	background-color: #ffffff;
+	border-radius: 20px;
+	border: 1px solid #ddd;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	border: #333 2px solid;
+	padding: 2rem;
+	position: relative;
+}
+
+.card-heading {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #ffffff;
+	line-height: 1.2;
+	margin-bottom: 1.5rem;
+	text-align: center;
+	background: linear-gradient(90deg, #007BFF, #00d4ff);
+	padding: 1rem;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-heading small {
+	display: block;
+	font-size: .75em;
+	font-weight: 400;
+	margin-top: .25em;
+	color: #f0f0f0;
+}
+
+.card-form {
+	width: 100%;
+}
+
+.input {
+	display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+	padding-top: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+.input-label {
+	color: #666;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: .25s ease;
+	font-size: 1rem;
+	pointer-events: none;
+}
+
+.input-field {
+	border: 0;
+	z-index: 1;
+	background-color: transparent;
+	border-bottom: 2px solid #ccc;
+	font: inherit;
+	font-size: 1.125rem;
+	padding: .5rem 0;
+	width: 100%;
+}
+
+.input-field:focus,
+.input-field:valid {
+	outline: 0;
+	border-bottom-color: #007BFF;
+}
+
+.input-field:focus+.input-label,
+.input-field:valid+.input-label {
+	color: #007BFF;
+	transform: translateY(-1.5rem);
+	font-size: 0.85rem;
+}
+
+.action {
+	margin-top: 2rem;
+}
+
+.action-button {
+	font: inherit;
+	font-size: 1.25rem;
+	padding: 0.75em 1em;
+	width: 100%;
+	font-weight: 500;
+	background-color: #007BFF;
+	border-radius: 6px;
+	color: #FFF;
+	border: 0;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+	cursor: pointer;
+}
+
+.action-button:hover {
+	background-color: #0056b3;
+	transform: translateY(-2px);
+}
+
+.card-info {
+	padding: 1rem;
+	text-align: center;
+	font-size: .875rem;
+	color: #8597a3;
+}
+
+.card-info a {
+	display: block;
+	color: #007BFF;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.card-info a:hover {
+	color: #0056b3;
+}
